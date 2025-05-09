@@ -1,0 +1,93 @@
+
+header {
+    text-align: center;
+    background-color: rgb(222, 222, 231);
+    margin: 1rem auto;
+    
+    
+    
+    border-bottom: solid black;
+    max-width: 1000px;
+
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: aliceblue;
+}
+nav a {
+    display: block;
+    /* text-align: center; */
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: red;
+    font-weight: 600;
+}
+nav ul {
+    display: flex;
+    
+}
+
+nav ul li {
+    flex: 1 1 100%;
+   
+    
+    
+}
+main {
+    max-width: 950px;
+    margin: auto;
+    background-color: rgb(223, 228, 202);
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    
+}
+
+section {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+section img {
+    
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    
+}
+
+section h2 {
+    text-align: center;
+}
+
+
+section .card{
+    border: solid black;
+    margin: 1rem auto;
+    text-align: center;
+    
+}
+
+
+
+.card img{
+    
+    float: right;
+    
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(222, 222, 231);
+}
