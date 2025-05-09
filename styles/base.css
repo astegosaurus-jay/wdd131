@@ -26,7 +26,7 @@ nav a {
 
 nav a:hover{
     color: red;
-    font-weight: 600;
+    font-weight: 500;
 }
 nav ul {
     display: flex;
@@ -45,6 +45,13 @@ main {
     background-color: rgb(223, 228, 202);
     display: grid;
     grid-template-columns: 4fr 2fr;
+    
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  
     
 }
 
@@ -82,6 +89,14 @@ section .card{
     float: right;
     
 }
+.card ul {
+    padding: 10px;
+    
+}
+.card a:hover {
+    color: red;
+    font-weight: 500;
+}
 
 footer {
     margin-top: 10px;
@@ -90,4 +105,20 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     background-color: rgb(222, 222, 231);
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 150px;
+    margin: auto;
+    grid-row: 2;
+}
+
+figcaption {
+    background-color: #526d75;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
 }
