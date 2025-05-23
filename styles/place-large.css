@@ -1,0 +1,39 @@
+@media screen and (min-width: 1000px)  {
+    header, main, footer {
+        max-width: 1000px;
+    }
+    h2 {
+        font-size: 2rem;
+        background-color: pink;
+        text-align: left;
+    }
+
+ .banner img {
+    position: relative;
+ }
+
+ .data {
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    background-color: white;
+    opacity: 0.9;
+ }
+
+ .weather {
+    position: absolute;
+    bottom: 5px;
+    right: 400px;
+    background-color: white;
+    opacity: 0.9;
+ }
+
+ .weather img {
+    display: none;
+ }
+
+ .weather h2::after {
+    content: "☁️";
+ }
+
+}

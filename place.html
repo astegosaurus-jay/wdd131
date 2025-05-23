@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Country page: Jason Jimenez</title>
+    <meta name="author" content="Jason Jimenez">
+    <meta name="description" content="WDD 131 Country page assignment">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+
+    <main> 
+        <div class="banner">
+            <picture>
+                <source  media="min-width 1000px" src="images/Fujinomiya-Shizuoka-Japan.webp">
+                <img src="images/flower-blossom.webp" alt="cherry blossom" width="900" height="1200">
+            </picture>
+        </div>
+
+        <div class="data">
+            <h2>Data</h2>
+            <p>Area: 145,937 sq mi</p>
+            <p>Population: 124.5 million</p>
+            <p>Capital: Tokyo</p>
+            <p>Languages: Japanese</p>
+            <p>Currency: Yen</p>
+            <p>Time Zone: UTC +9</p>
+            <p>Calling Code: +81</p>
+            <p>Internet TLD: .jp</p>
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="thermometer">
+            <p>Temperature: 62°F</p>
+            <p>Conditions: Partly Cloudy </p>
+            <p>Wind: 6mph</p>
+            <p>Wind chill: <span id="windChill"></span></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Jason Jimenez Utah</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
