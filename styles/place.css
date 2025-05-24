@@ -1,3 +1,10 @@
+:root {
+    font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 header, main, footer {
     max-width: 900px;
     margin: 1rem auto;
@@ -5,11 +12,11 @@ header, main, footer {
 header {
     text-align: center;
     padding: 30px;
-    background-color: white;
+    background-color: red;
     /* border-bottom: 30px solid pink; */
 }
 h1 {
-    color: rgb(255, 5, 5);
+    color: black;
    font-size: 3rem;
 }
 main {
