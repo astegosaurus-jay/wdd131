@@ -26,7 +26,7 @@ nav a:hover{
 }
 
 #menu {
-	font-size: 3rem;
+	font-size: 1.5rem;
 	border: 0;
 	background: none;
 	
@@ -86,21 +86,8 @@ img {
     height: auto;
 }
 
-figure {
-    border: thin black solid;
-    
-    padding: 5px;
-
-    /* max-width: 150px; */
-    margin: auto;
-    
-}
-
-figcaption {
-    background-color: #222;
-    color: #fff;
-    padding: 3px;
-    text-align: center;
+section {
+    background-color: aqua;
 }
 
 
