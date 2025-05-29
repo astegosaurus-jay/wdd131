@@ -87,11 +87,41 @@ const temples = [
   // Add more temple objects here...
 ];
 
+createTempleCard(temples);
+
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated) < 1900));
+});
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated) > 2000));
+});
+
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples);
+});
 
 
-function createTempleCard() {
+function createTempleCard(filteredtemples) {
     document.querySelector(".grid").innerHTML = "";
-    temples.forEach(temple => {
+    filteredtemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -107,6 +137,8 @@ function createTempleCard() {
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
+        img.setAttribute("width", 300);
+        img.setAttribute("height", 300);
 
         card.appendChild(name);
         card.appendChild(location);
@@ -120,4 +152,3 @@ function createTempleCard() {
     )
 }
 
-createTempleCard();

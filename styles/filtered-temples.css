@@ -16,8 +16,9 @@ header {
 }
 nav {
     margin: 1rem auto;
-    max-width: 400px;
+    max-width: 650px;
     background-color: aliceblue;
+    font-size: 1.5rem;
 }
 
 nav a:hover{
@@ -26,7 +27,7 @@ nav a:hover{
 }
 
 #menu {
-	font-size: 1.5rem;
+	font-size: 3rem;
 	border: 0;
 	background: none;
 	
