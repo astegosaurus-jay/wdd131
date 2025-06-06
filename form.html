@@ -20,11 +20,11 @@
     </header>
 
     <main>
-        <form action="get" action="review.html" class="wf1">
+        <form method="get" action="review.html" class="wf1">
             <fieldset>
                 <label>Product Name*
                     <select name="product" id="product" required>
-                        <option selected="true" disabled="disabled" value="">choose a product...</option>
+                        <option selected disabled="disabled" value="">choose a product...</option>
                     </select>
                 </label>
 
@@ -45,7 +45,9 @@
                     <label><input type="checkbox" name="performance" value="yes">Performance</label>
                     <label><input type="checkbox" name="design" value="yes">Design</label>
 
-                    <label>Written review<input type="textarea" name="review" id="review"></label>
+                    <label>Written review</label>
+                    <textarea name="review" placeholder="write here" rows="4" cols="50"></textarea>
+                    
 
                     <label>Your Name<input type="text" name="username" id="user"></label>
 
