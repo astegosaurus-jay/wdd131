@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Product review</title>
+    <meta name="author" content="Jason Jimenez">
+    <meta name="description" content="WDD 131 week 5 product review assignment">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300&family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>Product Name*
+                    <select name="product" id="product" required>
+                        <option selected="true" disabled="disabled" value="">choose a product...</option>
+                    </select>
+                </label>
+
+                 <div>Overall Rating*</div>
+                    <label><input type="radio" name="star" value="1star" required>⭐</label>
+                    <label><input type="radio" name="star" value="2star" required>⭐⭐</label>
+                    <label><input type="radio" name="star" value="3star" required>⭐⭐⭐</label>
+                    <label><input type="radio" name="star" value="4star" required>⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="star" value="5star" required>⭐⭐⭐⭐⭐</label>
+
+
+                    <label>Date of Installation*<input type="date" name="installation" required></label>
+
+                    <div>Which features did you find most useful in the product?</div>
+                    <p>(check all that apply)</p>
+                    <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" name="ease" value="yes">Ease of use</label>
+                    <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" name="design" value="yes">Design</label>
+
+                    <label>Written review<input type="textarea" name="review" id="review"></label>
+
+                    <label>Your Name<input type="text" name="username" id="user"></label>
+
+                    <label><input type="submit" value="Post Review"></label>
+            </fieldset>
+        </form>
+    </main>
+
+     <footer>
+        <p>© <span id="currentyear"></span> Jason Jimenez Utah</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
