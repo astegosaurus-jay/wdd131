@@ -1,0 +1,119 @@
+
+    header, footer, main {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+main {
+    background-color: aliceblue;
+}
+main img {
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+header, footer {
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+h1, h2 {
+    font-family: "Jost", sans-serif;
+}
+
+div {
+    padding: 1rem;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    
+}
+nav a {
+    display: block;
+    
+    padding: 20px;
+    
+
+}
+
+nav a:hover{
+    color: red;
+    font-weight: 500;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+   
+}
+p {
+    font-size: 1.2rem;
+    font-family: "Edu SA Hand", cursive;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+.grid img {
+    width: 400px;
+    height: 400px;
+}
+figure {
+    border: thin black solid;
+    
+    padding: 5px;
+
+    
+    margin: auto;
+    
+}
+
+
+.wf1 fieldset{
+    margin: 2rem 0 ;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: #fffdfd;
+
+}
+
+.wf1 legend{
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: rgb(155, 0, 0);
+    font-size: .9rem;
+}
+
+
+.wf1 input[type="textarea"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+
+}
